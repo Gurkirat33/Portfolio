@@ -1,6 +1,6 @@
 import EducationImg from "../assets/education.png";
 import ProjectImg from "../assets/project.png";
-import SkillsImg from "../assets/skills.jpg";
+import SkillsImg from "../assets/skills.png";
 
 export const AboutMeCatagoryData = [
   {
@@ -37,7 +37,7 @@ export const AboutMeDescriptionData = [
     },
   },
   {
-    heading: "My Education Background",
+    heading: "Technical Skills",
     description1:
       "As a proficient MERN stack developer, I specialize in creating dynamic and responsive web applications using MongoDB, Express.js, React, and Node.js. My expertise extends to styling modern interfaces with Tailwind CSS, ensuring both aesthetics and functionality in my projects. I am committed to delivering high-quality, user-friendly applications.",
     description2:
@@ -48,7 +48,7 @@ export const AboutMeDescriptionData = [
     },
   },
   {
-    heading: "My Education Background",
+    heading: "Project Highlights",
     description1:
       "I have worked on several projects that demonstrate my skills as a MERN stack developer. Through these projects, I have gained practical experience in building responsive and dynamic web applications, implementing user authentication, managing databases, and deploying applications. These projects have also enhanced my proficiency in using tools like Git, GitHub, Docker, and Zod for code management, containerization, and data validation.",
     description2: "Project examples include: ",

@@ -1,30 +1,40 @@
-import React from "react";
-import ArrowDownStImg from "../assets/arrow-down-st.png";
-import Step1 from "../assets/step1.png";
+import { MethodologyData } from "../Data/Methodology";
 
 const Methodology = () => {
   return (
-    <div className="section-container">
+    <div className="section-container mt-12">
       <h2 className="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
         My Methodology for Success
       </h2>
       <p className="mx-auto mb-6 mt-2 max-w-2xl text-center text-slate-600 md:mt-4">
-        Explore our structured approach to web development, meticulously crafted
+        Explore my structured approach to web development, meticulously crafted
         to tackle complexity with clarity and precision.
       </p>
-      <div>
-        <img src={Step1} alt="" />
-        <p className="text-center">Discovery and Analysis:</p>
-        <p className="text-center">
-          Understanding project goals and requirements is essential. I delve
-          deep into client discussions, analyzing every detail to gain a
-          comprehensive understanding of the project's scope and challenges.
-        </p>
-        <img
-          src={ArrowDownStImg}
-          alt=""
-          className="mx-auto h-24 w-24 object-cover"
-        />
+      <div className="mx-auto max-w-2xl">
+        {MethodologyData.map((item) => (
+          <div key={item.id} className="flex flex-col p-1 text-center">
+            <div className="flex items-center justify-center gap-4">
+              <img
+                src={item.stepImg}
+                alt="stepImg"
+                className="pointer-events-none h-20 w-20 select-none object-contain"
+              />
+              <h3 className="select-none text-xl font-semibold tracking-wider md:text-2xl">
+                {item.heading}
+              </h3>
+            </div>
+            <p>{item.desctiption}</p>
+            {item.id != 4 ? (
+              <img
+                src={item.arrowDownImg}
+                alt="arrowDownImg"
+                className="pointer-events-none mx-auto mt-2 h-16 w-16 select-none object-cover"
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

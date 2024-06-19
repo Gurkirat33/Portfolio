@@ -9,12 +9,13 @@ import ProfilePic from "../assets/profile (1).png";
 import AboutMe from "../Components/AboutMe";
 import CtaSection from "../Components/CtaSection";
 import Methodology from "../Components/Methodology";
+import Projects from "../Components/Projects";
 
 const Home = () => {
   return (
     <>
-      {/* Hero section start */}
-      {/* <div className="bg-gradient-to-br from-dim to-lite pt-24">
+      {/* Hero section start
+      <div className="bg-gradient-to-br from-dim to-lite pt-24">
         <div className="section-container flex flex-col pb-16 md:flex-row md:items-center">
           <div className="text-center md:w-2/3 md:text-left">
             <p className="text-2xl md:text-3xl">Hello,</p>
@@ -84,15 +85,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* Hero section end */}
       {/* About section start */}
       {/* <AboutMe /> */}
       {/* About section end */}
+      {/* <Methodology />
+      <CtaSection />  */}
 
-      {/* <CtaSection /> */}
       <div className="mt-24"></div>
-      <Methodology />
+      <Projects />
     </>
   );
 };
