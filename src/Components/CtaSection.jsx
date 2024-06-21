@@ -10,7 +10,7 @@ const CtaSection = () => {
           <img
             src={ProjectImg}
             alt="ProjectImg"
-            className="mx-auto h-80 rounded-lg object-cover md:h-auto"
+            className="mx-auto h-64 rounded-lg object-cover md:max-h-96"
           />
         </div>
         <div className="space-y-4 text-center md:my-auto md:w-[65%] md:text-left">
