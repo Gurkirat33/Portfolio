@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="section-container fixed left-0 right-0 top-2 mx-4 flex items-center justify-between rounded-lg border border-white/50 bg-white/50 backdrop-blur-lg lg:mx-auto">
+    <div className="section-container fixed left-0 right-0 top-2 z-50 mx-4 flex items-center justify-between rounded-lg border border-white/50 bg-white/50 backdrop-blur-lg lg:mx-auto">
       <div className="text-xl font-medium md:text-2xl">Gurkirat singh</div>
       <div className="text-xl md:hidden">
         <GiHamburgerMenu />

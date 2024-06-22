@@ -15,7 +15,7 @@ import ContactForm from "../Components/ContactForm";
 const Home = () => {
   return (
     <>
-      <div className="bg-gradient-to-br from-dim to-lite pt-24">
+      <div className="bg-gradient-to-br from-dim to-lite pt-24 md:pt-32">
         <div className="section-container flex flex-col pb-16 md:flex-row md:items-center">
           <div className="text-center md:w-2/3 md:text-left">
             <p className="text-2xl md:text-3xl">Hello,</p>
