@@ -11,7 +11,7 @@ import Blog from "./Pages/Blog";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <ScrollToTop />
       <Navbar />
       <Routes>
