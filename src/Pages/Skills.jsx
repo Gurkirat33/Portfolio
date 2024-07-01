@@ -2,7 +2,7 @@ import { SkillsData } from "../Data/Skills";
 
 const Skills = () => {
   return (
-    <div className="section-container pt-24">
+    <div className="section-container pt-6 md:pt-12">
       <h2 className="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
         Discover My Skillset
       </h2>
@@ -13,23 +13,29 @@ const Skills = () => {
         solutions.
       </p>
       <div>
-        <h4 className="text-center text-2xl font-medium">Skills</h4>
-        <div className="mx-auto max-w-xl space-y-4">
+        {/* <h4 className="text-center text-2xl font-medium">Skills</h4> */}
+        <div className="mx-auto max-w-3xl space-y-4">
           {SkillsData.map((skill) => (
-            <div key={skill.heading}>
-              <h3 className="my-3 border-2 text-center text-2xl font-medium">
+            <div
+              key={skill.heading}
+              className="rounded-lg bg-gradient-to-br from-dim to-lite p-4"
+            >
+              <h3 className="mt-3 text-center text-2xl font-semibold">
                 {skill.heading}
               </h3>
-              <p>{skill.description}</p>
-              <div className="flex gap-2">
+              <p className="mb-6 mt-4 text-center">{skill.description}</p>
+              <div className="flex flex-wrap justify-center gap-6">
                 {skill.skill.map((item) => (
-                  <div key={item.name}>
-                    <p key={item}>{item.name}</p>
+                  <div
+                    key={item.name}
+                    className="text-center duration-300 hover:scale-105"
+                  >
                     <img
                       src={item.image}
                       alt="skillImg"
-                      className="border-23 w-20 rounded-lg"
+                      className="mx-auto h-16 w-16 rounded-lg object-cover"
                     />
+                    <p className="mt-1 font-medium">{item.name}</p>
                   </div>
                 ))}
               </div>

@@ -1,48 +1,33 @@
-import { homePageProjectsData } from "../Data/Projects";
+import React from "react";
+import { ProjectPreviewData } from "../Data/Projects";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa6";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
+  const projectsToRender = ProjectPreviewData.slice(0, 3);
   return (
-    <div className="section-container mt-12">
-      <h2 className="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
-        Highlighted Projects
-      </h2>
-      <p className="mx-auto mb-6 mt-2 max-w-2xl text-center text-slate-600 md:mt-4">
-        Take a glimpse at some of my standout projects that demonstrate my
-        expertise and creativity in web development. Click on any project to
-        dive deeper into the details and technologies used.
-      </p>
-      <div className="grid gap-4 md:grid-cols-2 md:grid-rows-7">
-        {homePageProjectsData.map((project) => (
-          <>
-            {project.projectImg ? (
-              <div
-                key={project.heading}
-                className="border-2 border-black md:row-span-3"
-              >
-                <img
-                  src={project.projectImg}
-                  alt="projectImg"
-                  className="object-contain"
-                />
-                <div className="p-2">
-                  <h3 className="text-center text-2xl font-semibold">
-                    {project.heading}
-                  </h3>
-                  <p className="my-4 text-slate-600">{project.description}</p>
-                  <button className="w-full rounded-lg bg-primary px-4 py-2 text-white">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div className="p-4 text-2xl font-medium md:row-span-1 md:text-3xl">
-                {project.description}
-              </div>
-            )}
-          </>
-        ))}
+    <section className="bg-gray-100">
+      <div className="section-container py-12">
+        <div className="container mx-auto">
+          <h2 className="mb-8 text-center text-4xl font-bold">Projects</h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projectsToRender.map((project, index) => (
+              <ProjectCard project={project} key={index} />
+            ))}
+          </div>
+        </div>
+        <div className="mt-12 flex justify-center">
+          <Link
+            className="group flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 text-white transition-all duration-300 hover:scale-105"
+            to="/project"
+          >
+            View all projects
+            <FaArrowRight className="transition-all duration-300 group-hover:ml-1" />
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

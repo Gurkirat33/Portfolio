@@ -7,6 +7,7 @@ import ProjectInfo from "./Pages/ProjectInfo";
 import Contact from "./Pages/Contact";
 import Skills from "./Pages/Skills";
 import ScrollToTop from "./Components/ScrollToTop";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/project/:id" element={<ProjectInfo />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>

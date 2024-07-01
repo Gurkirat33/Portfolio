@@ -21,8 +21,8 @@ const AboutMe = () => {
     }
   };
   return (
-    <div className="section-container">
-      <h1 className="text-primary my-4 text-center text-3xl font-bold uppercase md:text-4xl lg:mb-12 lg:text-5xl">
+    <div className="section-container" id="about">
+      <h1 className="mb-4 mt-4 text-center text-3xl font-bold uppercase text-primary md:mt-12 md:text-4xl lg:mb-12 lg:text-5xl">
         About me
       </h1>
       <div className="flex flex-col lg:flex-row lg:gap-6">
@@ -65,7 +65,7 @@ const AboutMe = () => {
           </p>
           <Link
             to={activeDescription.buttonInfo.link}
-            className="bg-primary group mx-auto flex w-fit items-center gap-2 rounded-lg px-4 py-2 text-white duration-300 hover:scale-105 lg:ml-0"
+            className="group mx-auto flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2 text-white duration-300 hover:scale-105 lg:ml-0"
           >
             {activeDescription.buttonInfo.name}
             <span className="duration-300 group-hover:ml-1">

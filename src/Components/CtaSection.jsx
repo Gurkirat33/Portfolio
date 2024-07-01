@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CtaSection = () => {
   return (
-    <div className="text-text mt-12 bg-dim py-8">
+    <div className="text-text bg-dim py-8">
       <div className="section-container flex flex-col gap-6 md:flex-row">
         <div className="md:my-auto md:w-[35%]">
           <img

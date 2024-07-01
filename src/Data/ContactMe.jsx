@@ -27,18 +27,14 @@ export const ContactFormData = [
     id: "name",
     type: "text",
     placeholder: "Enter your name",
+    emailName: "from_name",
   },
   {
     name: "Email *",
     id: "email",
     type: "email",
     placeholder: "Enter your email",
-  },
-  {
-    name: "Phone number",
-    id: "phone",
-    type: "number",
-    placeholder: "Enter your phone number",
+    emailName: "user_email",
   },
   {
     name: "Message *",
@@ -46,5 +42,6 @@ export const ContactFormData = [
     id: "message",
     rows: 4,
     placeholder: "Enter your message",
+    emailName: "message",
   },
 ];

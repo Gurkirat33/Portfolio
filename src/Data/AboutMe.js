@@ -32,8 +32,8 @@ export const AboutMeDescriptionData = [
     description2:
       "Through coursework focusing on subjects such as programming languages, data structures, and database management, I acquired the foundational knowledge necessary for a career in technology. Engaging in hands-on projects and collaborative initiatives honed my problem-solving abilities and fostered a creative approach to challenges. My time at Guru Nanak Dev Polytechnical College not only solidified my technical expertise but also instilled in me a lifelong commitment to continuous learning and innovation in the dynamic field of computer science engineering",
     buttonInfo: {
-      name: "Explore more",
-      link: "/explore",
+      name: "Contact Me",
+      link: "/contact",
     },
   },
   {
@@ -51,10 +51,11 @@ export const AboutMeDescriptionData = [
     heading: "Project Highlights",
     description1:
       "I have worked on several projects that demonstrate my skills as a MERN stack developer. Through these projects, I have gained practical experience in building responsive and dynamic web applications, implementing user authentication, managing databases, and deploying applications. These projects have also enhanced my proficiency in using tools like Git, GitHub, Docker, and Zod for code management, containerization, and data validation.",
-    description2: "Project examples include: ",
+    description2:
+      "Project examples include: I've developed a versatile blog platform featuring an intuitive admin dashboard for seamless content management. Additionally, I created an AI quiz generator that dynamically generates quizzes based on user-defined topics, enhancing engagement and learning. Another notable project is a real-time blood donation website, facilitating instant communication between donors and recipients through integrated chat functionalities. ",
     buttonInfo: {
       name: "Explore my projects",
-      link: "/projects",
+      link: "/project",
     },
   },
 ];

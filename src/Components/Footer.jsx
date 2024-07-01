@@ -44,28 +44,28 @@ const Footer = () => {
           </p>
           <div className="flex justify-center gap-6 text-3xl">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=100057386602373"
               target="_blank"
               className="cursor-pointer"
             >
               <FaFacebook />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/gurkirat-singh-938473244/"
               target="_blank"
               className="cursor-pointer"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https://www.github.com"
+              href="https://github.com/Gurkirat33"
               target="_blank"
               className="cursor-pointer"
             >
               <FaGithub />
             </a>
             <a
-              href="https://www.twitter.com"
+              href="https://x.com/_kirat044_"
               target="_blank"
               className="cursor-pointer"
             >

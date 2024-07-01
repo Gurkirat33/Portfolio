@@ -5,14 +5,14 @@ export const FooterData = [
   },
   {
     name: "Visit my blog page",
+    link: "https://github.com/Gurkirat33/mern-blog",
+  },
+  {
+    name: "About me",
     link: "#",
   },
   {
-    name: "Download CV",
-    link: "#",
-  },
-  {
-    name: "Download CV",
+    name: "Follow me",
     link: "#",
   },
 ];

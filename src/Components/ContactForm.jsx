@@ -1,12 +1,43 @@
+import { useRef } from "react";
 import { ContactFormData, ContactMeData } from "../Data/ContactMe.jsx";
 import ContactImg from "../assets/try.avif";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
+  const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      form.current.from_name?.value?.trim() === "" ||
+      form.current.user_email?.value?.trim() === "" ||
+      form.current.message?.value?.trim() === ""
+    ) {
+      toast.error("Please fill all the fields");
+      return;
+    }
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        },
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message");
+        },
+      );
+  };
   return (
     <>
-      <h2 className="my-12 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
-        Contact me
-      </h2>
+      <Toaster />
       <div className="section-container mb-12 gap-4 md:flex">
         <div className="hidden border-2 lg:flex">
           <div className="relative">
@@ -47,7 +78,7 @@ const ContactForm = () => {
             project. Don't hesitate to contact us and we'll help your business
             skyrocket!
           </p>
-          <div className="mt-4 space-y-4">
+          <form ref={form} className="mt-4 space-y-4">
             {ContactFormData.map((input) => (
               <div key={input.name} className="flex flex-col gap-1">
                 <label htmlFor={input.id} className="text-left font-medium">
@@ -58,25 +89,27 @@ const ContactForm = () => {
                     key={input.name}
                     type={input.type}
                     placeholder={input.placeholder}
-                    id={input.id}
-                    rows={input.rows}
                     className="max-w-lg rounded-sm border-b-2 border-black p-2 focus:outline-none"
+                    name={input.emailName}
                   />
                 ) : (
                   <input
                     key={input.name}
                     type={input.type}
                     placeholder={input.placeholder}
-                    id={input.id}
+                    name={input.emailName}
                     className="rounded-sm border-b-2 border-black p-2 focus:outline-none md:max-w-lg"
                   />
                 )}
               </div>
             ))}
-            <button className="rounded-lg bg-primary px-4 py-2 text-white">
+            <button
+              className="rounded-lg bg-primary px-4 py-2 text-white"
+              onClick={handleSubmit}
+            >
               Submit
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </>
