@@ -17,7 +17,7 @@ export const ContactMeData = [
   {
     icon: <MdEmail />,
     heading: "Email",
-    description: "demo@gmail.com",
+    description: "gurkiratsingh12a@gmail.com",
   },
 ];
 

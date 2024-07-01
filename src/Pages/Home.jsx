@@ -11,6 +11,7 @@ import CtaSection from "../Components/CtaSection";
 import Projects from "../Components/Projects";
 import ContactForm from "../Components/ContactForm";
 import { MethodologyData } from "../Data/Methodology";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const handleScrollDown = () => {
@@ -40,18 +41,24 @@ const Home = () => {
               collaborate and create something extraordinary together.
             </p>
             <div className="mt-4 flex justify-center gap-4 md:justify-start">
-              <button className="group flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-white duration-300 hover:scale-105">
+              <Link
+                className="group flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-white duration-300 hover:scale-105"
+                to="/contact"
+              >
                 Hire me
                 <span className="duration-300 group-hover:ml-1">
                   <FaArrowRight />
                 </span>
-              </button>
-              <button className="group flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 text-white duration-300 hover:scale-105">
+              </Link>
+              <Link
+                className="group flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 text-white duration-300 hover:scale-105"
+                to="/project"
+              >
                 Projects
                 <span className="duration-300 group-hover:ml-1">
                   <FaArrowRight />
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
           <div className="mx-auto">
