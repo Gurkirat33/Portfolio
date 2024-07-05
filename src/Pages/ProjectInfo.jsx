@@ -22,16 +22,18 @@ const ProjectInfo = () => {
           <div className="mx-auto mb-8 max-w-4xl">
             <p className="text-center text-lg leading-relaxed text-gray-600">
               {currentProjectInfo.description}
-              <span className="ml-2">
-                View
-                <a
-                  href={currentProjectInfo.githubLink}
-                  className="underline underline-offset-2"
-                >
-                  {" "}
-                  source code
-                </a>
-              </span>
+              {currentProjectInfo.githubLink && (
+                <span className="ml-2">
+                  View
+                  <a
+                    href={currentProjectInfo.githubLink}
+                    className="underline underline-offset-2"
+                  >
+                    {" "}
+                    source code
+                  </a>
+                </span>
+              )}
             </p>
           </div>
 

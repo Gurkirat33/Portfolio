@@ -172,7 +172,6 @@ export const ProjectDetailedInfoData = {
   },
   passwordGenerator: {
     projectImages: [PasswordImg1, PasswordImg2],
-    githubLink: "https://github.com/YourUsername/password-generator",
     heading: "Password Generator",
     description:
       "A simple yet effective password generator that helps users create secure passwords. It includes options for length, complexity, and character types.",
@@ -190,7 +189,6 @@ export const ProjectDetailedInfoData = {
   },
   budgetApp: {
     projectImages: [BudgetApp1, BudgetApp2, BudgetApp3],
-    githubLink: "https://github.com/YourUsername/budget-app",
     heading: "Budget App",
     description:
       "A user-friendly budget application designed to help users track their income and expenses. It features intuitive input forms and detailed financial summaries.",
@@ -208,7 +206,6 @@ export const ProjectDetailedInfoData = {
   },
   quizApp: {
     projectImages: [QuizJs1, QuizJs2, QuizJs3],
-    githubLink: "https://github.com/YourUsername/quiz-app",
     heading: "Quiz App",
     description:
       "An interactive quiz application that allows users to take quizzes on various topics. It includes multiple question types and real-time feedback.",
@@ -226,7 +223,7 @@ export const ProjectDetailedInfoData = {
   },
   ecommerceLanding: {
     projectImages: [Ecom1, Ecom2, Ecom3, Ecom4],
-    githubLink: "https://github.com/YourUsername/ecommerce-landing-page",
+    githubLink: "https://github.com/Gurkirat33/Ecommerce-landing-page",
     heading: "E-commerce Landing Page",
     description:
       "A visually appealing e-commerce landing page designed to attract and convert visitors. It features product highlights, promotional banners, and a user-friendly layout.",

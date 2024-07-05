@@ -12,7 +12,9 @@ const Navbar = () => {
   };
   return (
     <div className="section-container sticky left-0 right-0 top-2 z-40 mx-4 flex flex-wrap items-center justify-between rounded-lg border border-white/50 bg-white/50 backdrop-blur-lg lg:mx-auto">
-      <div className="text-xl font-medium md:text-2xl">Gurkirat singh</div>
+      <Link to="/" className="text-xl font-medium md:text-2xl">
+        Gurkirat singh
+      </Link>
       <div className="text-xl md:hidden">
         {isMobileMenuOpen ? (
           <RxCross1 onClick={handleMenuClick} className="text-2xl font-bold" />
@@ -27,6 +29,7 @@ const Navbar = () => {
               to={item.link}
               className={`link-effect w-fit text-lg font-medium capitalize ${location === item.link ? "text-primary" : ""}`}
               onClick={handleMenuClick}
+              key={item.name}
             >
               {item.name}
             </Link>

@@ -12,6 +12,7 @@ import Projects from "../Components/Projects";
 import ContactForm from "../Components/ContactForm";
 import { MethodologyData } from "../Data/Methodology";
 import { Link } from "react-router-dom";
+import Resume from "../assets/Gurkirat_singh_resume.pdf";
 
 const Home = () => {
   const handleScrollDown = () => {
@@ -41,15 +42,16 @@ const Home = () => {
               collaborate and create something extraordinary together.
             </p>
             <div className="mt-4 flex justify-center gap-4 md:justify-start">
-              <Link
+              <a
                 className="group flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-white duration-300 hover:scale-105"
-                to="/contact"
+                href={Resume}
+                download="Gurkirat_singh_resume.pdf"
               >
-                Hire me
+                Resume
                 <span className="duration-300 group-hover:ml-1">
                   <FaArrowRight />
                 </span>
-              </Link>
+              </a>
               <Link
                 className="group flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 text-white duration-300 hover:scale-105"
                 to="/project"

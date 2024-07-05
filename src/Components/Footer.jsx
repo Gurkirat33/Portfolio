@@ -3,6 +3,7 @@ import { NavbarData } from "../Data/Navbar";
 import ProfileImg from "../assets/Untitled design.png";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FooterData } from "../Data/Footer";
+import Resume from "../assets/Gurkirat_singh_resume.pdf";
 
 const Footer = () => {
   return (
@@ -26,15 +27,27 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <div className="mb-6 mt-4 flex flex-col gap-4 md:mt-2 md:flex-row">
+          <div className="mb-6 mt-4 flex flex-col gap-4 text-center md:mt-2 md:flex-row">
             {FooterData.map((item) => (
-              <Link
-                to={item.link}
-                key={item.name}
-                className="link-effect-white"
-              >
-                {item.name}
-              </Link>
+              <div key={item.name}>
+                {item.name == "Download Resume" ? (
+                  <a
+                    href={Resume}
+                    download={item.download}
+                    className="link-effect-white"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    className="link-effect-white"
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
             ))}
           </div>
         </div>
