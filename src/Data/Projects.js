@@ -24,8 +24,68 @@ import Ecom1 from "../assets/Project-Images/EcommerceLandingPage/pic1.png";
 import Ecom2 from "../assets/Project-Images/EcommerceLandingPage/pic2.png";
 import Ecom3 from "../assets/Project-Images/EcommerceLandingPage/pic3.png";
 import Ecom4 from "../assets/Project-Images/EcommerceLandingPage/pic4.png";
+import aiWebBuiler1 from "../assets/Project-Images/aiWebBuilder/image1.png";
+import aiWebBuiler2 from "../assets/Project-Images/aiWebBuilder/image2.png";
+import aiWebBuiler3 from "../assets/Project-Images/aiWebBuilder/image3.png";
+import aiWebBuiler4 from "../assets/Project-Images/aiWebBuilder/image4.png";
+import aiWebBuiler5 from "../assets/Project-Images/aiWebBuilder/image5.png";
+import aiWebBuiler6 from "../assets/Project-Images/aiWebBuilder/image6.png";
+import interview1 from "../assets/Project-Images/interviewApp/image1.png";
+import interview2 from "../assets/Project-Images/interviewApp/image2.png";
+import interview3 from "../assets/Project-Images/interviewApp/image3.png";
+import interview4 from "../assets/Project-Images/interviewApp/image4.png";
+import interview5 from "../assets/Project-Images/interviewApp/image5.png";
+import interview6 from "../assets/Project-Images/interviewApp/image6.png";
+import stake1 from "../assets/Project-Images/stake/image1.png";
+import stake2 from "../assets/Project-Images/stake/image2.png";
+import stake3 from "../assets/Project-Images/stake/image3.png";
+import stake4 from "../assets/Project-Images/stake/image4.png";
 
 export const ProjectPreviewData = [
+  {
+    title: "AI Web Builder",
+    description:
+      "Effortlessly create custom websites with our AI-driven builder, offering tailored templates, real-time previews, and advanced design tools.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Gemini API",
+      "Tailwind CSS",
+      "Redis",
+      "Redux",
+    ],
+    imageUrl: aiWebBuiler1,
+    link: "/project/aiWebBuilder",
+    category: "Full Stack",
+  },
+  {
+    title: "Real-Time Coding Interview Platform",
+    description:
+      "Streamline coding interviews with our real-time platform, featuring collaborative editors, role-based access, and integrated video for an efficient, interactive experience.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "socket.io",
+      "Web Sockets",
+      "Redux",
+    ],
+    link: "/project/interviewApp",
+    imageUrl: interview1,
+    category: "Full Stack",
+  },
+  {
+    title: "Stake Clone(Mines games)",
+    description:
+      "A strategic minesweeper-inspired game where players navigate a grid to uncover rewards while avoiding hidden mines. Powered by over 10 advanced algorithms, the game offers dynamic and unpredictable gameplay. Players can earn points for successful moves, which are redeemable for virtual products.",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    imageUrl: stake1,
+    link: "/project/stake",
+    category: "Full Stack",
+  },
   {
     title: "Blog Website",
     description:
@@ -92,6 +152,92 @@ export const ProjectPreviewData = [
 ];
 
 export const ProjectDetailedInfoData = {
+  aiWebBuilder: {
+    projectImages: [
+      aiWebBuiler1,
+      aiWebBuiler2,
+      aiWebBuiler3,
+      aiWebBuiler4,
+      aiWebBuiler5,
+      aiWebBuiler6,
+    ],
+    githubLink: "https://github.com/Gurkirat33/AI-Website-builder",
+    heading: "AI Web Builder",
+    description:
+      "Create stunning, fully customized websites effortlessly with our AI-powered web builder. Tailored templates, real-time previews, and advanced tools empower both beginners and professionals to bring their unique visions to life, all within a user-friendly interface.",
+    techStack: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Gemini API",
+      "Tailwind CSS",
+      "Redis",
+    ],
+    highlights: [
+      "Generate custom websites with AI-driven content and design recommendations.",
+      "Customize every aspect of your site with a user-friendly interface.",
+      "Deploy your website instantly with a single click.",
+      "User-friendly interface for seamless web creation.",
+    ],
+    learnings: [
+      "Enhanced understanding of AI and natural language processing.",
+      "Improved understanding of real-time data processing and deployment.",
+      "Experience with implementing complex backend functionalities.",
+    ],
+  },
+  interviewApp: {
+    projectImages: [
+      interview1,
+      interview2,
+      interview3,
+      interview4,
+      interview5,
+      interview6,
+    ],
+    githubLink: "https://github.com/Gurkirat33/Interview-App",
+    heading: "Real-Time Coding Interview Platform",
+    description:
+      "Streamline coding interviews with our real-time platform, featuring collaborative editors, role-based access, and integrated video for an efficient, interactive experience.",
+    techStack: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "Tailwind CSS",
+      "Web RTC",
+    ],
+    highlights: [
+      "Conduct live coding interviews with an integrated collaborative code editor.",
+      "Role-based access control for structured interview sessions.",
+      "Real-time video chat alongside coding for a complete interview experience.",
+    ],
+    learnings: [
+      "Gained expertise in real-time collaborative features with WebSockets.",
+      "Developed efficient role management and access control systems.",
+      "Enhanced abilities in handling interview workflows and performance analytics.",
+      "Improved skills in video streaming integration with live coding.",
+    ],
+  },
+  stake: {
+    projectImages: [stake1, stake2, stake3, stake4],
+    githubLink: "https://github.com/Gurkirat33/StakeClone",
+    heading: "Stake Clone(Mines games)",
+    description:
+      "A strategic minesweeper-inspired game where players navigate a grid to uncover rewards while avoiding hidden mines. Powered by over 10 advanced algorithms, the game offers dynamic and unpredictable gameplay. Players can earn points for successful moves, which are redeemable for virtual products.",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
+    highlights: [
+      "Dynamic and unpredictable gameplay.",
+      "Points system for successful moves.",
+      "Redeemable for virtual products.",
+    ],
+    learnings: [
+      "Gained expertise in minesweeper-inspired gameplay.",
+      "Developed advanced algorithms for dynamic gameplay.",
+      "Enhanced understanding of game mechanics and mechanics.",
+    ],
+  },
   blog: {
     projectImages: [BlogImg1, BlogImg2, BlogImg3, BlogImg4, BlogImg5],
     githubLink: "https://github.com/Gurkirat33/mern-blog",
